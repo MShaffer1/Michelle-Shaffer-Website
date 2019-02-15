@@ -1,5 +1,5 @@
 body {
-  background-color: #FFDAB9;
+  background-image: radial-gradient(circle, #f2e6d9 5%,#ecd9c6, #dfbf9f,#cc9966,#f2e6d9);
   border-style: groove;
   border-width: thick;
   border-color: #009999;
@@ -24,14 +24,17 @@ h3 {
   font-family:Georgia;
   text-shadow:.5px .5px 1px #003333;
   padding-left: 8px;
-
 }
 th {
   text-align: left;
 }
 ul {
   padding-left: 42px;
+  font-weight: bold;
 }
+.link1 {
+  font-size: 20px;
+  padding: 6px;
 a {
   font-weight: bold;
 }
