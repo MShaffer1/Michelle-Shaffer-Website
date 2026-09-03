@@ -1,219 +1,364 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michelle Shaffer | Technical Content Writer & IT Specialist</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michelle Shaffer | Technical Content Writer & IT Specialist</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-
-  <!-- Top Navigation Header -->
-  <header class="site-header">
-    <div class="container nav-container">
-      <div class="logo">
-        <a href="index.html"><strong>Michelle Shaffer</strong></a>
+  <body>
+    <!-- Top Navigation Header -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <div class="logo">
+          <a href="index.html"><strong>Michelle Shaffer</strong></a>
+        </div>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#portfolio">Writing Portfolio</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#portfolio">Writing Portfolio</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    </header>
+
+    <main class="container">
+      <!-- Hero / About Me Section -->
+      <section id="about" class="hero-section">
+        <div class="hero-grid">
+          <div class="hero-image-wrapper">
+            <img
+              src="images/me2026.jpg"
+              alt="Michelle Shaffer Profile Picture"
+              class="profile-img"
+            />
+          </div>
+          <div class="hero-content">
+            <span class="badge">Technical Writer & IT Specialist</span>
+            <h1>Hi, I'm Michelle.</h1>
+            <p class="lead-text">
+              I translate complex technical systems, developer workflows, and
+              enterprise software into clear, engaging, and highly accurate
+              documentation.
+            </p>
+            <p class="bio-text">
+              With over 7 years of combined experience in high-volume IT
+              operations, knowledge management (authoring 200+ KBAs and
+              maintaining a 9.7+ QA benchmark), and hands-on web development, I
+              bridge the gap between technical engineering teams and
+              non-technical end users.
+            </p>
+            <div class="hero-cta">
+              <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+              <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider divider-1" />
+
+      <!-- Writing Portfolio Section -->
+      <section id="portfolio" class="section">
+        <h2>Technical Writing & Content</h2>
+        <p class="section-intro">
+          Selected developer guides, technical explainers, and architectural
+          write-ups.
+        </p>
+
+        <div class="portfolio-grid">
+          <article class="card">
+            <div class="card-tag">Technical Explainer</div>
+            <h3>
+              <a href="posts/technicalExplainer.html"
+                >How to Write Internal Tech Docs Developers Will Actually
+                Read</a
+              >
+            </h3>
+            <p>
+              A deep dive into structuring Knowledge Base Articles and SOPs that
+              cut down triage time, prevent developer frustration, and maintain
+              long-term adoption.
+            </p>
+            <a href="posts/technicalExplainer.html" class="read-more"
+              >Read Guide &rarr;</a
+            >
+          </article>
+
+          <article class="card">
+            <div class="card-tag">Web Standards</div>
+            <h3>
+              <a href="posts/cleanCodeHabits.html">
+                Clean Code Habits: Refactoring HTML for Semantics &
+                Accessibility</a
+              >
+            </h3>
+            <p>
+              Step-by-step techniques for auditing raw web pages, fixing broken
+              nesting, and improving accessibility and SEO through proper HTML
+              semantics.
+            </p>
+            <p style="color: #d9534f">
+              <em
+                ><strong
+                  >This page is a work in progress and will be updated
+                  soon.</strong
+                ></em
+              >
+            </p>
+            <a href="posts/cleanCodeHabits.html" class="read-more"
+              >Read Guide &rarr;</a
+            >
+          </article>
+
+          <article class="card">
+            <div class="card-tag">Workflow Optimization</div>
+            <h3>
+              <a href="posts/leveragingLLMs.html"
+                >How to Leverage LLMs to Streamline Complex Workflows</a
+              >
+            </h3>
+            <p>
+              A practical guide to AI prompt architecture, context retention,
+              and human-in-the-loop validation for multi-step technical
+              projects.
+            </p>
+
+            <p style="color: #d9534f">
+              <em
+                ><strong
+                  >This page is a work in progress and will be updated
+                  soon.</strong
+                ></em
+              >
+            </p>
+
+            <a href="posts/leveragingLLMs.html" class="read-more"
+              >Read Guide &rarr;</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <hr class="divider divider-2" />
+
+      <!-- Credentials & Degree Section -->
+      <section id="credentials" class="section">
+        <h2>Education & Core Technical Competencies</h2>
+
+        <div class="credentials-grid">
+          <div class="education-card">
+            <div class="degree-img-wrapper" onclick="openModal()">
+              <img
+                src="images/DegreeEdit.jpg"
+                alt="B.S. in Information Technology Diploma"
+                class="degree-img"
+              />
+              <div class="zoom-overlay">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="degree-details">
+              <h3>Bachelor of Science in Information Technology</h3>
+              <p class="institution">
+                <strong>American Intercontinental University Online</strong> |
+                <em>Summa Cum Laude</em>
+              </p>
+              <p class="degree-desc">
+                Specialized focus in Software Analysis & Development and IT
+                Project Management.
+              </p>
+            </div>
+          </div>
+
+          <div class="skills-block">
+            <h3>Core Technical Stack</h3>
+            <div class="skills-tags">
+              <span class="tag">Technical Documentation</span>
+              <span class="tag">KBA / SOP Architecture</span>
+              <span class="tag">Confluence</span>
+              <span class="tag">SharePoint</span>
+              <span class="tag">HTML5 / CSS3 / JavaScript</span>
+              <span class="tag">Git & GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">System Diagnostics</span>
+              <span class="tag">Cloudflare DNS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider divider-3" />
+
+      <!-- Experience Timeline -->
+      <section id="experience" class="section">
+        <h2>Professional Experience</h2>
+        <div class="experience-list">
+          <div class="exp-item">
+            <div class="exp-date">2026 – Present</div>
+            <div class="exp-content">
+              <h3>Mobile Application Developer</h3>
+              <p class="company">Independent Project</p>
+              <p>
+                Architecting and building a multi-platform mobile application
+                using VS Code, Flutter, and Dart. Designed initial UI wireframes
+                and application logic, with a roadmap focused on integrating
+                custom AI-assisted workflows.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-date">2020 – Present</div>
+            <div class="exp-content">
+              <h3>Senior Certified Tech Advisor</h3>
+              <p class="company">theITSupportCenter, LLC</p>
+              <p>
+                Managed real-time enterprise IT incidents, authored and
+                maintained 200+ Knowledge Base Articles and SOPs, and maintained
+                a 9.7+ QA score across four consecutive years.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-date">2025 – Present</div>
+            <div class="exp-content">
+              <h3>Founder & Primary Developer</h3>
+              <p class="company">The Phoenix Project</p>
+              <p>
+                Designed, built, and deployed custom web assets using standard
+                HTML5, CSS3, JavaScript, GitHub Pages, and Cloudflare DNS
+                infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider divider-4" />
+
+      <!-- Contact & Footer Section -->
+      <section id="contact" class="section contact-section">
+        <h2>Let's Connect</h2>
+        <p>
+          Interested in discussing technical content writing, developer docs, or
+          project collaboration? Drop a message below!
+        </p>
+
+        <div class="contact-container">
+          <form
+            action="https://formspree.io/f/xjybnoep"
+            method="POST"
+            class="contact-form"
+          >
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your.email@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project or inquiry..."
+                required
+              ></textarea>
+            </div>
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Portfolio Contact Form Submission"
+            />
+
+            <button type="submit" class="btn btn-primary submit-btn">
+              Send Message
+            </button>
+          </form>
+
+          <div class="contact-socials">
+            <a
+              href="https://github.com/mshaffer1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
+              >GitHub Profile</a
+            >
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
+              >LinkedIn Profile</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Michelle Shaffer. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal for Enlarged Degree (Outside <main> to prevent flexbox distortion) -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="modal-close">&times;</span>
+      <img
+        class="modal-content"
+        id="imgFullSize"
+        src="images/DegreeEdit.jpg"
+        alt="Enlarged Diploma"
+      />
     </div>
-  </header>
 
-  <main class="container">
-    
-    <!-- Hero / About Me Section -->
-    <section id="about" class="hero-section">
-      <div class="hero-grid">
-        <div class="hero-image-wrapper">
-          <img src="images/me2026.jpg" alt="Michelle Shaffer Profile Picture" class="profile-img">
-        </div>
-        <div class="hero-content">
-          <span class="badge">Technical Writer & IT Specialist</span>
-          <h1>Hi, I'm Michelle.</h1>
-          <p class="lead-text">
-            I translate complex technical systems, developer workflows, and enterprise software into clear, engaging, and highly accurate documentation.
-          </p>
-          <p class="bio-text">
-            With over 7 years of combined experience in high-volume IT operations, knowledge management (authoring 200+ KBAs and maintaining a 9.7+ QA benchmark), and hands-on web development, I bridge the gap between technical engineering teams and non-technical end users.
-          </p>
-          <div class="hero-cta">
-            <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
-            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <script>
+      function openModal() {
+        document.getElementById("imageModal").style.cssText =
+          "display: flex !important;";
+      }
 
-    <hr class="divider divider-1">
-
-    <!-- Writing Portfolio Section -->
-    <section id="portfolio" class="section">
-      <h2>Technical Writing & Content</h2>
-      <p class="section-intro">Selected developer guides, technical explainers, and architectural write-ups.</p>
-      
-      <div class="portfolio-grid">
-        <article class="card">
-          <div class="card-tag">Technical Explainer</div>
-          <h3><a href="posts/technicalExplainer.html">How to Write Internal Tech Docs Developers Will Actually Read</a></h3>
-          <p>A deep dive into structuring Knowledge Base Articles and SOPs that cut down triage time, prevent developer frustration, and maintain long-term adoption.</p>
-          <a href="posts/technicalExplainer.html" class="read-more">Read Guide &rarr;</a>
-        </article>
-
-        <article class="card">
-          <div class="card-tag">Hands-On Tutorial</div>
-          <h3><a href="posts/eventTrackingPipeline.html">Setting Up an Event-Tracking Pipeline for Custom Web Applications</a></h3>
-          <p>Step-by-step breakdown of capturing DOM events in vanilla JavaScript, handling payloads, and routing data efficiently without unnecessary overhead.</p>
-          <a href="posts/eventTrackingPipeline.html" class="read-more">Read Tutorial &rarr;</a>
-        </article>
-
-        <article class="card">
-          <div class="card-tag">Reference Guide</div>
-          <h3><a href="posts/apiStatusTriage.html">Decoding API Status Codes: Fast Diagnostic Workflows for Support Teams</a></h3>
-          <p>Practical diagnostic pathways for isolating client-side vs. server-side API failures under tight response SLAs.</p>
-          <a href="posts/apiStatusTriage.html" class="read-more">Read Guide &rarr;</a>
-        </article>
-      </div>
-    </section>
-
-    <hr class="divider divider-2">
-
-    <!-- Credentials & Degree Section -->
-    <section id="credentials" class="section">
-      <h2>Education & Core Technical Competencies</h2>
-      
-      <div class="credentials-grid">
-        <div class="education-card">
-        <div class="degree-img-wrapper" onclick="openModal()">
-          <img src="images/DegreeEdit.jpg" alt="B.S. in Information Technology Diploma" class="degree-img">
-          <div class="zoom-overlay">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-          </div>
-        </div>
-        <div class="degree-details">
-          <h3>Bachelor of Science in Information Technology</h3>
-          <p class="institution"><strong>American Intercontinental University Online</strong> | <em>Summa Cum Laude</em></p>
-          <p class="degree-desc">Specialized focus in Software Analysis & Development and IT Project Management.</p>
-        </div>
-      </div>
-
-        <div class="skills-block">
-          <h3>Core Technical Stack</h3>
-          <div class="skills-tags">
-            <span class="tag">Technical Documentation</span>
-            <span class="tag">KBA / SOP Architecture</span>
-            <span class="tag">Confluence</span>
-            <span class="tag">SharePoint</span>
-            <span class="tag">HTML5 / CSS3 / JavaScript</span>
-            <span class="tag">Git & GitHub</span>
-            <span class="tag">VS Code</span>
-            <span class="tag">System Diagnostics</span>
-            <span class="tag">Cloudflare DNS</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider divider-3">
-
-    <!-- Experience Timeline -->
-    <section id="experience" class="section">
-      <h2>Professional Experience</h2>
-      <div class="experience-list">
-        <div class="exp-item">
-          <div class="exp-date">2026 – Present</div>
-          <div class="exp-content">
-            <h3>Mobile Application Developer</h3>
-            <p class="company">Independent Project</p>
-            <p>Architecting and building a multi-platform mobile application using VS Code, Flutter, and Dart. Designed initial UI wireframes and application logic, with a roadmap focused on integrating custom AI-assisted workflows.</p>
-          </div>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-date">2020 – Present</div>
-          <div class="exp-content">
-            <h3>Senior Certified Tech Advisor</h3>
-            <p class="company">theITSupportCenter, LLC</p>
-            <p>Managed real-time enterprise IT incidents, authored and maintained 200+ Knowledge Base Articles and SOPs, and maintained a 9.7+ QA score across four consecutive years.</p>
-          </div>
-        </div>
-
-        <div class="exp-item">
-          <div class="exp-date">2025 – Present</div>
-          <div class="exp-content">
-            <h3>Founder & Primary Developer</h3>
-            <p class="company">The Phoenix Project</p>
-            <p>Designed, built, and deployed custom web assets using standard HTML5, CSS3, JavaScript, GitHub Pages, and Cloudflare DNS infrastructure.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider divider-4">
-
-    <!-- Contact & Footer Section -->
-    <section id="contact" class="section contact-section">
-      <h2>Let's Connect</h2>
-      <p>Interested in discussing technical content writing, developer docs, or project collaboration? Drop a message below!</p>
-      
-      <div class="contact-container">
-        <form action="https://formspree.io/f/xjybnoep" method="POST" class="contact-form">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
-          </div>
-
-          <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
-
-          <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
-        </form>
-
-        <div class="contact-socials">
-          <a href="https://github.com/mshaffer1" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub Profile</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn Profile</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Michelle Shaffer. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Lightbox Modal for Enlarged Degree (Outside <main> to prevent flexbox distortion) -->
-  <div id="imageModal" class="modal" onclick="closeModal()">
-    <span class="modal-close">&times;</span>
-    <img class="modal-content" id="imgFullSize" src="images/DegreeEdit.jpg" alt="Enlarged Diploma">
-  </div>
-
-  <script>
-    function openModal() {
-      document.getElementById('imageModal').style.cssText = 'display: flex !important;';
-    }
-
-    function closeModal() {
-      document.getElementById('imageModal').style.cssText = 'display: none !important;';
-    }
-  </script>
-
-</body>
-
+      function closeModal() {
+        document.getElementById("imageModal").style.cssText =
+          "display: none !important;";
+      }
+    </script>
+  </body>
 </html>
